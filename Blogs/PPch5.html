@@ -1,0 +1,41 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title> My Blog </title>
+    </head>
+    <body>
+      <p>
+      David Terkula
+      </p>
+      <p>
+Pragmatic Programmer Chapter 5: Bend or Break Response
+    </p>
+    <p>
+The central theme of this chapter is that code that is written not considering the future will run out of date quickly. Code therefore
+should be written as flexibly as possible, and writing less code in general helps one do this. Business logic or business needs or
+software can change seemingly at the drop of a hat, so even in the short run if one isn't writing flexible code, they are at a
+disadvantage. In Data structures last semester we learned to write templated classes that didn't depend on the data type passed in.
+I see this as the same type of thing as writing templated classes and algorithms that implement them, one can be ready to handle
+most data types without really any change (except modifying the comparison operators). One feature of flexible code that the authors
+highlight is code that is loosely coupled, and one key way to ensure this is to follow the law of Demeter for functions. This law
+states that each method should only call other functions if they are acting on the class itself, on the arguments passed in, or any
+system functions. Another part of flexibility is the ability to change the applications configuration at runtime, and this can be
+accomplished through using metadata, or data about data. One example of metadata that we used in class is a schema file, which
+contains the fields and column names for a database table. Metadata can be used to change the configuration of the applications at
+run time which can provide the user with more options. Using metadata can allow one to program for the general case and let the user
+of the application choose which implementation they want to use, which forces decoupling and abstraction.
+</p>
+<p>
+This chapter also highlighted some aspects of flexibility our class didn't touch on, which is concurrency. One of the main
+implementations of concurrency in java is through the use of multi-threading, or running many processes in parallel. From
+CSCI 250, Languages and Automata, we know that running things in parallel is significantly faster than one at a time as
+non-deterministic Turing machines run all choices in parallel which would take a deterministic Turing machine exponentially
+more operations; and the same holds true for real computers and algorithms as well. One of the issues of concurrency
+is having many loosely coupled parts communicate at runtime; however, We learned how dependency injection can be used to help
+solve this problem and we used a Spring application framework to facilitate this. Using multi-threading to run processes
+in parallel is an efficient practice as it teaches programmers to not always think linearly, and maximize what can be done
+at a given instance and see time related dependencies. I thought this chapter was relevant to the course but would have been more
+relatable if we had gotten to multithreading threading.
+</p>
+      </body>
+</html>
